@@ -6,8 +6,8 @@ let reanudar
 let bandera = true
 
 /*---- ocultar botones desde el inicio----*/
-botonPausar.style.visibility = 'hidden'
-botonBorrar.style.visibility = 'hidden'
+botonPausar.style.display = 'none'
+botonBorrar.style.display = 'none'
 
 function iniciar(divValorTiempo) {
     if ((divValorTiempo >= 999999999999999) || (divValorTiempo < 0)) {
@@ -22,11 +22,9 @@ function iniciar(divValorTiempo) {
             divValorTemporizado.textContent = divValorTiempo;
             start = setTimeout(iniciar, 1000, divValorTiempo - 1);
             botonPausar.disabled = false;
-            botonIniciar.style.visibility = 'hidden';
-            botonPausar.style.visibility = 'visible';
-            botonBorrar.style.visibility = 'visible';
-            botonBorrar.style.marginLeft = '40px';
-            botonPausar.style.marginRight = '40px';
+            botonIniciar.style.display = 'none';
+            botonPausar.style.display = 'grid';
+            botonBorrar.style.display = 'grid';
             return start
         }
     }
@@ -52,8 +50,9 @@ function borrar() {
     divValorTiempo.value = "";
     divValorTemporizado.textContent = "";
     botonPausar.disabled = false;
-    botonIniciar.style.visibility = 'visible';
-    botonPausar.style.visibility = 'hidden'
-    botonBorrar.style.visibility = 'hidden'
+    botonIniciar.style.display = 'grid';
+    botonPausar.style.display = 'none';
+    botonBorrar.style.display = 'none';
     bandera = true;
 }
+

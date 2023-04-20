@@ -25,6 +25,8 @@ function iniciar(divValorTiempo) {
             botonIniciar.style.visibility = 'hidden';
             botonPausar.style.visibility = 'visible';
             botonBorrar.style.visibility = 'visible';
+            botonBorrar.style.marginLeft = '40px';
+            botonPausar.style.marginRight = '40px';
             return start
         }
     }

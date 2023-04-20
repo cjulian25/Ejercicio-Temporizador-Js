@@ -144,7 +144,7 @@ button:active {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 375px){
+@media (max-width: 550px){
     .contenedor__botones {
         gap: 20px;
     }

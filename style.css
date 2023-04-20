@@ -1,0 +1,142 @@
+/* --------------- RESET ---------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* --------------- HTML,BODY ---------------*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------- CONTENEDORES ---------------*/
+
+.contenedor__fondo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://png.pngtree.com/background/20210706/original/pngtree-clock-time-timepiece-timer-background-picture-image_222732.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedor__temporizador {
+    width: 60%;
+    min-width: 300px;
+    height: 70%;
+    min-height: 500px;
+    margin-top: 7%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.651);
+    border: solid 2px rgba(155, 155, 155, 0.911);
+    border-radius: 12px;
+    box-shadow: 8px 8px 12px rgba(155, 155, 155, 0.911);
+}
+
+.contenedor__titulo {
+    text-align: center;
+    margin-top: 6%;
+    text-shadow: 5px 2px 10px orange;
+}
+
+.contenedor__opciones {
+    height: 110px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.contenedor__valorTiempo {
+    width: 190px;
+    height: 80%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: solid 2px rgba(155, 155, 155, 0.911);
+    box-shadow: 2px 2px 5px rgba(155, 155, 155, 0.911);
+    border-radius: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contenedor__valorTemporizado {
+    width: 190px;
+    height: 13%;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px auto 30px auto;
+    display: grid;
+    place-content: center;
+    background-color: rgba(255, 255, 255, 0.473);
+    border: solid 2px rgba(155, 155, 155, 0.911);
+    box-shadow: 2px 2px 5px rgba(155, 155, 155, 0.911);
+    border-radius: 12px;
+}
+
+
+/* --------------- BOTONES ---------------*/
+
+.contenedor__botones {
+    display: flex;
+    justify-content: center;
+    gap: -5px;
+    margin-top: 80px;
+}
+
+.botones {
+    width: 107px;
+    height: 107px;
+    display: grid;
+    place-content: center;
+    border: solid 2px rgba(155, 155, 155, 0.911);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 6px 6px 12px #e4e4e4, -12px -6px 12px white;
+}
+
+button:hover {
+    box-shadow: 6px 6px 12px white, -12px -6px 12px #ccc;
+}
+
+button:active {
+    box-shadow: inset 6px 6px 12px #ccc, inset -12px -6px 12px white;
+}
+
+.boton__Borrar {
+    background-image: url("./iconos/iconoParar.png");
+    background-size: 50% 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.boton__Iniciar {
+    background-image: url("./iconos/iconoReproducir.png");
+    background-size: 80% 80%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.boton__Pausar {
+    background-image: url("./iconos/iconoPausa.png");
+    background-size: 80% 80%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
